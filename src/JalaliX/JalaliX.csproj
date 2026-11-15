@@ -6,7 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
-		<Version>0.2.0</Version>
+		<Version>0.2.1</Version>
 		<Authors>Hossein Maklavani</Authors>
 		<Description>Jalali (Persian / Shamsi) calendar for .NET. Sponsor: https://opencollective.com/jalalix</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

@@ -1,6 +1,7 @@
 # Release Notes
 All notable changes to this package will be documented in this file.
 
+## 0.2.1
 - Include README in the NuGet package
 
 ## 0.2.0
