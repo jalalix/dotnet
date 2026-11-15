@@ -13,5 +13,10 @@
 		<PackageProjectUrl>https://jalalix.com</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/jalalix/dotnet</RepositoryUrl>
 		<PackageTags>jalali;persian;shamsi;calendar;date</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 </Project>

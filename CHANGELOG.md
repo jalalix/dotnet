@@ -1,6 +1,8 @@
 # Release Notes
 All notable changes to this package will be documented in this file.
 
+- Include README in the NuGet package
+
 ## 0.2.0
 - Added `normalizeQueryDate` for loose query/form inputs (sentinels, unix s/ms, Jalali vs Gregorian auto-detect by year band; default `1…1899`, overridable via `jalaliYearMin` / `jalaliYearMax`)
 - `fromPersian` also converts Arabic-Indic digits (`٠-٩`)
