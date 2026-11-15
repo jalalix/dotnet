@@ -1,16 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework Condition="'$(TargetFramework)' == ''">net8.0</TargetFramework>
-    <RootNamespace>JalaliX</RootNamespace>
-    <AssemblyName>JalaliX</AssemblyName>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-    <Version>0.1.1</Version>
-    <Authors>Hossein Maklavani</Authors>
-    <Description>Jalali (Persian / Shamsi) calendar for .NET</Description>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://jalalix.com</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/jalalix/dotnet</RepositoryUrl>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework Condition="'$(TargetFramework)' == ''">net8.0</TargetFramework>
+		<RootNamespace>JalaliX</RootNamespace>
+		<AssemblyName>JalaliX</AssemblyName>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<Version>0.1.1</Version>
+		<Authors>Hossein Maklavani</Authors>
+		<Description>Jalali (Persian / Shamsi) calendar for .NET. Sponsor: https://opencollective.com/jalalix</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://jalalix.com</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/jalalix/dotnet</RepositoryUrl>
+		<PackageTags>jalali;persian;shamsi;calendar;date</PackageTags>
+	</PropertyGroup>
 </Project>

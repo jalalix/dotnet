@@ -1,21 +1,21 @@
 <Project>
-  <!--
-    Declared TFM is net8.0 (JalaliX.csproj).
-    Auto-fallback to net6.0 when no SDK 8+ is installed, or when JalaliXTfm is set.
-  -->
-  <PropertyGroup>
-    <_DotNetRoot Condition="'$(DOTNET_ROOT)' != ''">$(DOTNET_ROOT)</_DotNetRoot>
-    <_DotNetRoot Condition="'$(_DotNetRoot)' == ''">$([System.Environment]::GetEnvironmentVariable('HOME'))/.dotnet</_DotNetRoot>
-    <_DotNetRootFallback>/usr/local/share/dotnet</_DotNetRootFallback>
-    <_HasSdk8 Condition="Exists('$(_DotNetRoot)/sdk')">false</_HasSdk8>
-  </PropertyGroup>
+	<!--
+		Declared TFM is net8.0 (JalaliX.csproj).
+		Auto-fallback to net6.0 when no SDK 8+ is installed, or when JalaliXTfm is set.
+	-->
+	<PropertyGroup>
+		<_DotNetRoot Condition="'$(DOTNET_ROOT)' != ''">$(DOTNET_ROOT)</_DotNetRoot>
+		<_DotNetRoot Condition="'$(_DotNetRoot)' == ''">$([System.Environment]::GetEnvironmentVariable('HOME'))/.dotnet</_DotNetRoot>
+		<_DotNetRootFallback>/usr/local/share/dotnet</_DotNetRootFallback>
+		<_HasSdk8 Condition="Exists('$(_DotNetRoot)/sdk')">false</_HasSdk8>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(JalaliXTfm)' != ''">
-    <TargetFramework>$(JalaliXTfm)</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(JalaliXTfm)' != ''">
+		<TargetFramework>$(JalaliXTfm)</TargetFramework>
+	</PropertyGroup>
 
-  <!-- Heuristic: if ProgramFiles/dotnet has only 6.x, prefer net6.0 for local builds. -->
-  <PropertyGroup Condition="'$(TargetFramework)' == '' AND Exists('/usr/local/share/dotnet/sdk/6.0.100') AND !Exists('/usr/local/share/dotnet/sdk/8.0.100')">
-    <TargetFramework>net6.0</TargetFramework>
-  </PropertyGroup>
+	<!-- Heuristic: if ProgramFiles/dotnet has only 6.x, prefer net6.0 for local builds. -->
+	<PropertyGroup Condition="'$(TargetFramework)' == '' AND Exists('/usr/local/share/dotnet/sdk/6.0.100') AND !Exists('/usr/local/share/dotnet/sdk/8.0.100')">
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
 </Project>
